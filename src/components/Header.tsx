@@ -110,7 +110,12 @@ const Header = () => {
             <div className="w-7 h-7 mr-2 bg-blue-600 rounded-full flex items-center justify-center text-white">
               <span className="text-base font-bold">$</span>
             </div>
-            <span className="text-base font-bold text-gray-900">Money.io</span>
+            <button 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="text-base font-bold text-gray-900 hover:text-blue-600 transition-colors cursor-pointer"
+            >
+              Money.io
+            </button>
           </div>
 
           {/* Desktop Navigation */}

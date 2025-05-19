@@ -35,27 +35,24 @@ const Hero = () => {
                 Começar agora - É grátis!
               </Button>
               
-              <a href="#features" className="flex items-center justify-center px-8 py-4 border border-gray-300 rounded-md hover:bg-gray-50 transition-all hover:border-gray-400 group text-lg">
-                <span className="mr-2 group-hover:mr-3 transition-all">Saiba mais</span>
-                <ArrowDown size={20} className="group-hover:translate-y-1 transition-all" />
+              <a href="#features" className="flex items-center justify-center w-auto min-w-[200px] h-[58px] bg-white/90 border border-gray-300 rounded-full hover:bg-gray-50 transition-all hover:border-primary/50 hover:shadow-lg group text-lg relative overflow-hidden backdrop-blur-sm">
+                <span className="relative z-10 font-medium text-gray-700 group-hover:text-primary transition-colors">Saiba mais</span>
+                <ArrowDown size={20} className="relative z-10 ml-3 text-gray-500 group-hover:text-primary group-hover:translate-y-1 transition-all duration-300" />
+                <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-primary/10 to-purple-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
             </div>
             
-            <div className="mt-12 flex items-center">
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className={`w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-${i % 2 ? 'blue' : 'purple'}-400 to-${i % 3 ? 'indigo' : 'green'}-500`}></div>
-                ))}
+            <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <div className="flex items-center px-4 py-2 bg-gradient-to-r from-green-50 to-emerald-50 rounded-full border border-green-200 group hover:shadow-md hover:border-green-300 hover:from-green-100 hover:to-emerald-100 transition-all duration-300">
+                <span className="flex-shrink-0 w-3 h-3 rounded-full bg-gradient-to-r from-green-500 to-emerald-400 mr-2.5 shadow-sm group-hover:animate-pulse"></span>
+                <p className="text-sm text-gray-700 font-medium">Sem instalação necessária</p>
               </div>
-              <p className="ml-4 text-base text-gray-600">
-                <span className="font-semibold">+1.240</span> pessoas gerenciando finanças
-              </p>
+              
+              <div className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full border border-blue-200 group hover:shadow-md hover:border-blue-300 hover:from-blue-100 hover:to-indigo-100 transition-all duration-300">
+                <span className="flex-shrink-0 w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-400 mr-2.5 shadow-sm group-hover:animate-pulse"></span>
+                <p className="text-sm text-gray-700 font-medium">Pronto para usar em 5 segundos</p>
+              </div>
             </div>
-            
-            <p className="mt-6 text-base text-gray-500 flex items-center">
-              <span className="inline-block w-3 h-3 rounded-full bg-green-500 mr-2"></span>
-              Sem instalação. Sem complicação. Pronto para usar.
-            </p>
           </div>
           
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
