@@ -212,9 +212,7 @@ const Features = () => {
           </div>
           
           <div className="lg:w-1/2 flex justify-center">
-            <IPhoneMockup>
-              <ChatSimulation />
-            </IPhoneMockup>
+            <IPhoneMockup />
           </div>
         </div>
         
