@@ -212,7 +212,10 @@ const Features = () => {
           </div>
           
           <div className="lg:w-1/2 flex justify-center">
-            <IPhoneMockup />
+            <div className="flex flex-col items-center">
+              <IPhoneMockup />
+              <p className="mt-4 text-gray-600 font-medium text-center">Vídeo demonstração</p>
+            </div>
           </div>
         </div>
         

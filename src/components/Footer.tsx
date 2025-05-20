@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const Footer = () => {
@@ -9,22 +8,14 @@ const Footer = () => {
           {/* Company */}
           <div>
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center mr-2">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19 5L5 19M5.00001 5L19 19"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+              <div className="mr-2">
+                <img 
+                  src="/images/logo-moneyio.png" 
+                  alt="Money.io Logo" 
+                  width={40} 
+                  height={40}
+                  className="rounded-md"
+                />
               </div>
               <span className="text-xl font-semibold">Money.io</span>
             </div>
